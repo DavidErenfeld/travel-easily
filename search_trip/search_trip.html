@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../general.css"/>
+    <link rel="stylesheet" href="../search_trip/style.css"/>
+    <title>Travel easily</title>
+  </head>
+  <body>
+    <div class="background-blur"></div>
+    <header class="header">
+      <div class="logo">TRAVEL easily</div>
+      <a href="#" class="personal-area">Personal Area</a>
+    </header>
+    <main>
+      <div class="hero-section">
+        <p class="description" >
+          Creating a lifetime experience for you!
+        </p>
+        <aside class="lookupTable">
+          <!-- 1. Where are you going? -->
+          <div class="lookupTable-line">
+              <label for="destination">Where are you going?</label>
+              <input type="text" id="destination" name="destination" required />
+          </div>
+      
+          <!-- 2. Who we are -->
+          <div class="lookupTable-line">
+            <label for="style">Who we are?</label>
+            <select id="style" name="style" required>
+                <option value="">Please select</option>
+                <option value="casual">Family</option>
+                <option value="business">Pair</option>
+                <option value="luxury">singles</option>
+                <option value="adventurous">only</option>
+            </select>
+        </div>
+          
+          <!-- 3. Departure date -->
+          <div class="time-box">
+          <div class="lookupTable-line date">
+              <label for="departure-date">Departure date</label>
+              <input class="date" id="departure-date" name="departure-date" type="date" required />
+          </div>
+      
+          <!-- 4. Departure time -->
+          <div class="lookupTable-line time">
+              <label for="departure-time">Departure time</label>
+              <input class="time" id="departure-time" name="departure-time" type="time" required />
+          </div>
+        </div>
+
+        <div class="time-box">
+          <!-- 5. Return date -->
+          <div class="lookupTable-line date">
+              <label for="return-date">Return date</label>
+              <input class="date" id="return-date" name="return-date" type="date" required />
+          </div>
+      
+          <!-- 6. Return time -->
+          <div class="lookupTable-line time">
+              <label for="return-time">Return time</label>
+              <input class="time" id="return-time" name="return-time" type="time" required />
+          </div>
+        </div>
+      
+          <!-- 7. What style are you looking for? -->
+          <div class="lookupTable-line">
+              <label for="style">What style are you looking for?</label>
+              <select id="style" name="style" required>
+                  <option value="">Please select a style</option>
+                  <option value="casual">Nature</option>
+                  <option value="business">Urban</option>
+                  <option value="luxury">Attractions</option>
+                  <option value="adventurous">Romantic</option>
+              </select>
+              
+          </div>
+      
+          <!-- 8. Age range -->
+          <div class="lookupTable-line age">
+            <label for="max-age">Average age</label>
+            <input id="max-age" name="max-age" type="number" min="0" max="120" step="1" placeholder="120" required />
+        </div>
+      
+          <button class="offer-button">Arrange me a trip</button>
+      </aside>
+      
+      </div>
+    </div>
+    </main>
+  </body>
+</html>

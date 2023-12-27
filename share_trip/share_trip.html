@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="../share_trip/style.css" />
+    <title>Share Trip</title>
+  </head>
+  <body>
+    <div class="background-blur"></div>
+    <header class="header">
+      <div class="logo">TRAVEL easily</div>
+      <a href="#" class="personal-area">Personal Area</a>
+    </header>
+    <main class="hero-section">
+      <section class="buttons-section">
+        <p class="question-buttons">We are</p>
+        <button class="btn btn-you-are">romantic couple</button>
+        <button class="btn btn-you-are">happy family</button>
+        <button class="btn btn-you-are">friends</button>
+        <button class="btn btn-you-are">Seniors</button>
+        <button class="btn btn-you-are">single</button>
+        <button class="btn btn-you-are">groups</button>
+      </section>
+
+      <section class="trip-location-section country-section hidden">
+        <input
+          type="text"
+          id="countrySearch"
+          placeholder="In which country did you travel?"
+        />
+        <div id="suggestions" style="display: none">
+          <!-- רשימת ההצעות תופיע כאן -->
+        </div>
+        <button class="btn save-location save-country">save</button>
+      </section>
+
+      <section class="trip-location-section city-section hidden">
+        <input
+          type="text"
+          class="citySearch"
+          placeholder="In which city did you travel?"
+        />
+        <div id="citySuggestions" style="display: none"></div>
+        <button class="btn save-location save-city">save</button>
+      </section>
+
+      <section class="buttons-section setting-trip-section hidden">
+        <p class="question-buttons setting-trip">
+          How would you define your trip?
+        </p>
+        <button class="btn btn-setting-trip">attractions</button>
+        <button class="btn btn-setting-trip">romantic</button>
+        <button class="btn btn-setting-trip">nature</button>
+        <button class="btn btn-setting-trip">parties</button>
+        <button class="btn btn-setting-trip">food</button>
+        <button class="btn btn-setting-trip">integrated</button>
+      </section>
+
+      <p class="description">
+        Helping people create an amazing travel experience!
+      </p>
+    </main>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
+btn btn-share-trip

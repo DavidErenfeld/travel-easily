@@ -1,0 +1,189 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600 
+bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.6
+Paragraph default: 1.6
+
+
+--- 02 COLORS
+
+- Primary: 
+- Tints: 
+
+
+- Shades:
+
+
+- Greys:
+
+
+--- 05 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 15);
+
+--- 06 BORDER-RADIUS
+Default: 9px
+
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.background-blur {
+  position: fixed; /* או absolute, תלוי בצרכים שלך */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../search_trip/imgs/frantisek-zelinka-NYpiSHcGfbw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.2rem);
+  z-index: -1; /* כדי שהרקע יהיה מאחורי התוכן */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 1/ -1;
+  padding: 0 2rem;
+  align-self: self-start;
+  padding-top: 3rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  align-self: self-start;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 rgb(154, 154, 154);
+}
+
+.personal-area:link,
+.personal-area:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.personal-area:hover,
+.personal-area:active {
+  color: #4683bc;
+}
+
+.btn {
+  cursor: pointer;
+  width: 18rem;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  border-radius: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+  box-shadow: 0.5px 0.5px 0.5px 1px rgba(195, 196, 197, 0.97);
+  background: none;
+  backdrop-filter: blur(1rem);
+}
+
+.btn:hover {
+  color: #fff;
+  filter: blur(-5rem);
+  box-shadow: 2px 0.2rem 2rem 2px rgba(255, 255, 255, 0.97);
+}
+
+a.btn:link,
+a.btn:visited {
+  text-decoration: none;
+  font-weight: 600;
+  width: 18rem;
+  font-size: 2rem;
+  padding: 1.6rem;
+  border-radius: 2.4rem;
+  color: #fff;
+  /* background-color: #2808f9; */
+  box-shadow: 0.5px 0.5px 0.5px 1px rgba(195, 196, 197, 0.97);
+  backdrop-filter: blur(1rem);
+  border: 0;
+}
+
+a.btn:hover,
+a.btn:active {
+  /* background-color: rgb(10, 40, 68); */
+  color: #fff;
+  filter: blur(-5rem);
+  box-shadow: 2px 0.2rem 2rem 2px rgba(255, 255, 255, 0.97);
+}
+
+/**************************/
+/* HERO SECTION*/
+/**************************/
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 2rem;
+}
+
+.description {
+  grid-column: 1/2;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 6rem;
+  color: #e6e6f1;
+  line-height: 1.2;
+  grid-row: 1;
+  padding-left: 2rem;
+
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 rgb(154, 154, 154); */
+}
