@@ -1,13 +1,9 @@
-.hidden {
-  display: none !important;
-}
-
 .description {
   grid-column: 2/-1;
 }
 
 /***************************
- BUTTONS-SECTION
+ BUTTONS SECTION
 ****************************/
 .buttons-section {
   display: grid;
@@ -27,7 +23,7 @@
 }
 
 /***************************
- TRIP LOCATION SECTION
+ TRIP-LOCATION SECTION
 ****************************/
 
 .trip-location-section {
@@ -44,22 +40,6 @@
   padding: 1rem;
   font-weight: 500;
   border-radius: 12px;
-}
-
-#countrySearch {
-  width: 70%;
-  font-size: 2rem;
-  padding: 1.6rem;
-  border-radius: 12px;
-  background: none;
-  color: #fff;
-  backdrop-filter: blur(0.5rem);
-}
-
-#countrySearch::placeholder {
-  font-size: 2rem;
-  color: #fff; /* שינוי צבע ה-placeholder */
-  opacity: 1; /* אופציונלי - קובע את שקיפות הטקסט */
 }
 
 #suggestions {
@@ -94,21 +74,9 @@
   backdrop-filter: blur(1rem);
 }
 
-.citySearch {
-  width: 70%;
-  font-size: 2rem;
-  padding: 1.6rem;
-  border-radius: 9px;
-  background: none;
-  color: #fff;
-}
-
-.citySearch::placeholder {
-  font-size: 2.4rem;
-  color: #fff; /* שינוי צבע ה-placeholder */
-  opacity: 1; /* אופציונלי - קובע את שקיפות הטקסט */
-}
-
+/***************************
+ SETTING-TRIP SECTION
+****************************/
 .setting-trip {
   width: 100%;
   grid-column: 1/-1;

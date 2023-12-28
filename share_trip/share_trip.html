@@ -33,6 +33,7 @@
         <input
           type="text"
           id="countrySearch"
+          class="selection-box"
           placeholder="In which country did you travel?"
         />
         <div id="suggestions" style="display: none">
@@ -44,7 +45,7 @@
       <section class="trip-location-section city-section hidden">
         <input
           type="text"
-          class="citySearch"
+          class="selection-box citySearch"
           placeholder="In which city did you travel?"
         />
         <div id="citySuggestions" style="display: none"></div>
@@ -66,7 +67,8 @@
       <section class="trip-location-section duration-trip-section hidden">
         <input
           type="number"
-          class="citySearch"
+          min="1"
+          class="selection-box num-of-days"
           placeholder="How many days did you travel?"
         />
         <div id="citySuggestions" style="display: none"></div>

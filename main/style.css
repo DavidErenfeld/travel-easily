@@ -58,25 +58,6 @@ Default: 9px
   z-index: -1; /* כדי שהרקע יהיה מאחורי התוכן */
 }
 
-/* .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  grid-column: 1/ -1;
-  padding: 0 2rem;
-  align-self: self-start;
-  padding-top: 3rem;
-} */
-
-.logo {
-  font-size: 3rem;
-  font-weight: 700;
-  align-self: self-start;
-  color: #fff;
-  /* height: 22rem;
-  width: 30rem; */
-}
-
 .personal-area:link,
 .personal-area:visited {
   text-decoration: none;
@@ -107,10 +88,7 @@ Default: 9px
   font-size: 5rem;
   align-self: center;
   color: #e6e6f1;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 rgb(154, 154, 154); */
-  /* filter: blur(-10rem); */
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 .buttons-container {
