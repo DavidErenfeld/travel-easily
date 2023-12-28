@@ -58,7 +58,7 @@ Default: 9px
   z-index: -1; /* כדי שהרקע יהיה מאחורי התוכן */
 }
 
-.header {
+/* .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +66,7 @@ Default: 9px
   padding: 0 2rem;
   align-self: self-start;
   padding-top: 3rem;
-}
+} */
 
 .logo {
   font-size: 3rem;
@@ -94,7 +94,7 @@ Default: 9px
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 .hero-title {

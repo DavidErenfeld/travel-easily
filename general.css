@@ -78,7 +78,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(../search_trip/imgs/frantisek-zelinka-NYpiSHcGfbw-unsplash.jpg);
+  background-image: url(./imgs/img\ index.jpg);
   background-size: cover;
   background-position: center;
   filter: blur(0.2rem);
@@ -90,9 +90,11 @@ body {
   align-items: center;
   justify-content: space-between;
   grid-column: 1/ -1;
-  padding: 0 2rem;
+  margin: 2rem;
   align-self: self-start;
-  padding-top: 3rem;
+  padding: 1rem;
+  /* background-color: #fff; */
+  border-radius: 4px;
 }
 
 .logo {
@@ -104,17 +106,23 @@ body {
     1px 1px 0 rgb(154, 154, 154);
 }
 
+.img-logo {
+  max-height: 70px;
+  width: 200px;
+  border-radius: 9px;
+}
+
 .personal-area:link,
 .personal-area:visited {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 500;
-  color: #fff;
+  color: #010220;
 }
 
 .personal-area:hover,
 .personal-area:active {
-  color: #4683bc;
+  color: #050ba0;
 }
 
 .btn {
@@ -169,7 +177,7 @@ a.btn:active {
   gap: 4.8rem;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 75vh;
   margin: 0 2rem;
 }
 

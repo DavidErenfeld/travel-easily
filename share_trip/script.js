@@ -5,6 +5,9 @@ let saveCityEl = document.querySelector(".save-city");
 let citySectionEl = document.querySelector(".city-section");
 let countrySectionEl = document.querySelector(".country-section");
 let settingTripSectionEl = document.querySelector(".setting-trip-section");
+let btnSettingTripElements = document.querySelectorAll(".btn-setting-trip");
+let durationTripSectionEl = document.querySelector(".duration-trip-section");
+
 // מוסיף מאזין לאירוע קליק לכל אחד מהכפתורים שנבחרו
 btnYouAreElements.forEach(function (btn) {
   btn.addEventListener("click", function () {
@@ -18,6 +21,15 @@ btnYouAreElements.forEach(function (btn) {
     // מחיקת הקלאס "hidden" מהסקציה של המדינות כדי להציג אותה
     countrySectionEl.classList.remove("hidden");
     // saveCountryEl.classList.remove("hidden");
+  });
+});
+
+btnSettingTripElements.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    // let settingTripSectionEl = document.querySelector(".setting-trip-section");
+
+    settingTripSectionEl.classList.add("hidden");
+    durationTripSectionEl.classList.remove("hidden");
   });
 });
 
