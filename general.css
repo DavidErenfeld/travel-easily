@@ -90,7 +90,8 @@ body {
   align-items: center;
   justify-content: space-between;
   grid-column: 1/ -1;
-  margin: 2rem;
+  margin: 2rem 4rem;
+
   align-self: self-start;
   padding: 1rem;
   /* background-color: #fff; */
@@ -123,6 +124,12 @@ body {
 .personal-area:hover,
 .personal-area:active {
   color: #050ba0;
+}
+
+.personal-area-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer;
 }
 
 .btn {
@@ -178,7 +185,7 @@ a.btn:active {
   justify-content: center;
   align-items: center;
   height: 75vh;
-  margin: 0 2rem;
+  margin: auto 5rem;
 }
 
 .description {
